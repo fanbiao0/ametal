@@ -200,7 +200,7 @@ typedef struct am_zml166_adc_dev {
     uint8_t                         speed;
 
     /** \brief ADC 增益倍数 */
-    uint8_t                         gain;
+    uint16_t                        gain;
 
     /** \brief 中断是否使能 */
     am_bool_t                       irq_en;
@@ -287,7 +287,7 @@ am_err_t am_zml166_adc_reg_get (am_zml166_adc_dev_t *p_dev,
  * \brief ZML166 ADC 前置放大器增益设置
  *
  * \param[in] p_dev   :指向 AM_ZML166_ADC 设备结构体的指针
- * \param[in] gain    :增益，可设置为 1、2、4、8、16、32、64、128、256
+ * \param[in] gain    :增益，可设置为 1、2、4、8、16、32、64、128
  *
  * \retval  AM_OK     :设置成功
  * \retval -AM_EINVAL :无效参数
@@ -306,7 +306,7 @@ am_err_t am_zml166_adc_gain_set (am_zml166_adc_dev_t *p_dev,
  * \retval -AM_EINVAL :无效参数
  */
 am_err_t am_zml166_adc_gain_get (am_zml166_adc_dev_t *p_dev,
-                                 uint8_t             *p_gain);
+                                 uint16_t            *p_gain);
 
 /**
  * \brief ZML166 ADC 数据输出速率设置

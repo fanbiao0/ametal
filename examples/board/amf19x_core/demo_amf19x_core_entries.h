@@ -591,17 +591,13 @@ void demo_hc32f19x_core_kft_bootloader_entry (void);
 void demo_hc32f19x_core_kft_application_entry (void);
 
 /**
-
  * \brief 双区bootloader的测试应用程序例程
  */
-
 void demo_hc32f19x_core_double_application_entry (void);
 
 /**
-
  * \brief 单区bootloader的测试应用程序例程
  */
-
 void demo_hc32f19x_core_single_application_entry (void);
 
 /**
@@ -653,3 +649,8 @@ void demo_hc32f19x_core_hw_trng_generate_entry (void);
  * \brief LCD显示例程，通过 HW 层接口实现
  */
 void demo_hc32f19x_core_hw_lcd_entry (void);
+
+/**
+ * \brief FLASH 写保护例程
+ */
+void demo_hc32f19x_core_drv_flash_write_protect_entry (void);

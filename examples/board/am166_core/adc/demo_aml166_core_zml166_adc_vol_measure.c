@@ -50,7 +50,6 @@
 #define AM_ZML166_ADC_PGA_SET_32        5     /**< \brief 32倍增益选择参数 */
 #define AM_ZML166_ADC_PGA_SET_64        6     /**< \brief 64倍增益选择参数 */
 #define AM_ZML166_ADC_PGA_SET_128       7    /**< \brief 128倍增益选择参数 */
-#define AM_ZML166_ADC_PGA_SET_256       8    /**< \brief 256倍增益选择参数 */
 
 
 /**
@@ -71,7 +70,7 @@ void demo_aml166_core_zml166_adc_vol_measure (void)
             para[2 * i + 1] = 0;
         }
     }
-    dome_zml166_adc_vol_measure_entry((void *)handle,
+    demo_zml166_adc_vol_measure_entry((void *)handle,
                                               para,
                                               AM_ZML166_ADC_PGA_SET_1);
 }
